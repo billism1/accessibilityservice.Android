@@ -37,7 +37,7 @@ namespace UssdcodeRead
 	}
 	[Service(Label = "myApp", Permission = Manifest.Permission.BindAccessibilityService)]
 	[IntentFilter(new []{ "android.accessibilityservice.AccessibilityService" })]
-	[MetaData("android.accessibilityservice.AccessibilityService", Resource = "@xml/accessibility_service_config")]
+	[MetaData("android.accessibilityservice", Resource = "@xml/accessibility_service_config")]
 	public class UssdCodeFetch : AccessibilityService
 	{ 
 		public override void OnAccessibilityEvent (AccessibilityEvent e)
